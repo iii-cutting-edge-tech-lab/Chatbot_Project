@@ -1,3 +1,6 @@
 [submodule "Chatbot_Line"]
 	path = Chatbot_Line
 	url = https://github.com/iii-cutting-edge-tech-lab/Chatbot_Line.git
+[submodule "Chatbot_Dev"]
+	path = Chatbot_Dev
+	url = https://github.com/iii-cutting-edge-tech-lab/Chatbot_Dev.git
