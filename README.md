@@ -3,3 +3,5 @@
 * 9/6 新增  
 於Chatbot_Project下掛載兩個repo  
 分別為Chatbot_Line及Chatbot_Dev
+* 9/13 更新  
+將Chatbot_Line及Chatbot_Dev更新為最新狀態  
