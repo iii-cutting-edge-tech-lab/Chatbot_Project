@@ -9,3 +9,6 @@
 *9/15
 將所有container整合打包
 apiserver對外端口為5001
+
+*9/17
+加入codebuild腳本,buildspec.yml,build.sh
