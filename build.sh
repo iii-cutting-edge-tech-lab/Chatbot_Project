@@ -3,6 +3,8 @@ set -ex
 USERNAME=204065533127.dkr.ecr.ap-northeast-1.amazonaws.com
 # image name
 IMAGE=cc102_ecr_test
+git submodule init 
+git submodule update
 docker build -t $USERNAME/$IMAGE:mysql -f Chatbot_Dev/dockerfile-mysql Chatbot_Dev/
 docker build -t $USERNAME/$IMAGE:api -f Chatbot_Dev/dockerfile-api Chatbot_Dev/
 docker build -t $USERNAME/$IMAGE:redis -f Chatbot_Line/dockerfile-redis Chatbot_Line/
