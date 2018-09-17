@@ -11,8 +11,7 @@
 <<<<<<< HEAD
 apiserver對外端口為5001
 
-*9/17
-加入codebuild腳本,buildspec.yml,build.sh
+
 =======
 apiserver對外端口為80
 >>>>>>> c9bc5de08a03c04252e6ed7c9968838aa234aef2
