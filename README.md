@@ -5,3 +5,7 @@
 分別為Chatbot_Line及Chatbot_Dev
 * 9/13 更新  
 將Chatbot_Line及Chatbot_Dev更新為最新狀態  
+
+*9/15
+將所有container整合打包
+apiserver對外端口為5001
