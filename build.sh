@@ -9,11 +9,11 @@ IAMGE3=ngrok
 IAMGE4=api
 IAMGE5=mysql
 
-docker build -t $USERNAME/$IAMGE1:latest -f Chatbot_Line/dockerfile/dockerfile-redis dockerfile/
-docker build -t $USERNAME/$IAMGE2:latest -f Chatbot_Line/dockerfile/dockerfile-jupyter dockerfile/
-docker build -t $USERNAME/$IAMGE3:latest -f Chatbot_Line/dockerfile/dockerfile-ngrok dockerfile/
-docker build -t $USERNAME/$IAMGE4:latest -f Chatbot_Dev/dockerfile/dockerfile-api dockerfile/
-docker build -t $USERNAME/$IAMGE5:latest -f Chatbot_Dev/dockerfile/dockerfile-mysql dockerfile/
+docker build -t $USERNAME/$IAMGE1:latest -f Chatbot_Line/dockerfile/dockerfile-redis Chatbot_Line/dockerfile/
+docker build -t $USERNAME/$IAMGE2:latest -f Chatbot_Line/dockerfile/dockerfile-jupyter Chatbot_Line/dockerfile/
+docker build -t $USERNAME/$IAMGE3:latest -f Chatbot_Line/dockerfile/dockerfile-ngrok Chatbot_Line/dockerfile/
+docker build -t $USERNAME/$IAMGE4:latest -f Chatbot_Dev/dockerfile/dockerfile-api Chatbot_Dev/dockerfile/
+docker build -t $USERNAME/$IAMGE5:latest -f Chatbot_Dev/dockerfile/dockerfile-mysql Chatbot_Dev/dockerfile/
 
 
 
