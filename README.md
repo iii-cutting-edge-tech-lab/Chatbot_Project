@@ -11,6 +11,8 @@
 <<<<<<< HEAD
 apiserver對外端口為5001
 
+*9/17
+更改docker-compose image來源
 
 =======
 apiserver對外端口為80
