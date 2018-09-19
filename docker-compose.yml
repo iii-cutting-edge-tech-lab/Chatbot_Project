@@ -19,7 +19,7 @@ services:
     environment:
       - GRANT_SUDO=yes
     ports:
-      - "80:5000"
+      - "5001:5000"
     depends_on:
       - db
     links:
