@@ -1,7 +1,7 @@
 set -ex
-#set registry
 git submodule init 
 git submodule update
+#set registry
 USERNAME=204065533127.dkr.ecr.ap-northeast-1.amazonaws.com
 IAMGE1=redis
 IAMGE2=jupyter
