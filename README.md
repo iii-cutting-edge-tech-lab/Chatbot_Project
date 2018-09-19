@@ -6,16 +6,17 @@
 * 9/13 更新  
 將Chatbot_Line及Chatbot_Dev更新為最新狀態  
 
-*9/15
+* 9/15
 將所有container整合打包
-<<<<<<< HEAD
 apiserver對外端口為5001
 
-*9/17
+* 9/17
 更改docker-compose image來源
 
-*9/19
+* 9/19
 新增codebuild腳本&所需文件
-=======
-apiserver對外端口為80
->>>>>>> c9bc5de08a03c04252e6ed7c9968838aa234aef2
+
+* 9/19 devops分枝
+新增git-push.sh 腳本 自動更新到github
+更新submodule到最新的master
+新增git-submodule.sh腳本 可自動執行git submodule動作
