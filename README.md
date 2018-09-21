@@ -16,3 +16,8 @@ apiserver對外端口為5001
 * 9/19
 新增codebuild腳本&所需文件
 更新submodule到最新master
+新增getip.sh 於EC2開啟後自動執行抓取EC2 ip 存入文件ip.env
+更新docker compose ：
+    LINE_API 抓取ip.env文件導入環境變數
+    開啟command	改為直接執行python檔test.py
+
