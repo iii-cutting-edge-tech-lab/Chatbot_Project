@@ -37,24 +37,38 @@ services:
      - ./Chatbot_Line/redis/data:/data
 #     - ./Chatbot_Line/redis/redis.config:/usr/local/etc/redis/redis.conf
 
-  jupyter-tutorial:
+#  jupyter-tutorial:
+#    image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
+#    container_name: chatbot_jupyter
+#    depends_on: 
+#      - api
+#      - redis
+#    ports:
+#      - "8888:8888"
+#      - "5000:5000"
+#    command: start-notebook.sh --NotebookApp.token=''
+#    volumes:
+#     - ./Chatbot_Line/code:/home/jovyan/work
+
+  ngrok-external-dns:
+    image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
+    container_name: chatbot_ngrok
+    depends_on: 
+      #- jupyter-tutorial
+      - ubuntu
+    ports:
+      - "4040:4040"
+    command: ngrok http chatbot_ubuntu:5000
+
+  ubuntu:
     image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
-    container_name: chatbot_jupyter
+    container_name: chatbot_ubuntu
     depends_on: 
       - api
       - redis
     ports:
       - "8888:8888"
       - "5000:5000"
-    command: start-notebook.sh --NotebookApp.token=''
     volumes:
-     - ./Chatbot_Line/code:/home/jovyan/work
-
-  ngrok-external-dns:
-    image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
-    container_name: chatbot_ngrok
-    depends_on: 
-      - jupyter-tutorial
-    ports:
-      - "4040:4040"
-    command: ngrok http chatbot_jupyter:5000
+      - ./Chatbot_Line/code:/home/jovyan/work
+    command: python /home/jovyan/work/test.py
