@@ -13,13 +13,13 @@ permissions:
 hooks:
   BeforeInstall: 
     - location: stop_service.sh
-      timeout: 30
+      timeout: 60
       runas: ec2-user
   AfterInstall: 
     - location: build_service.sh
-      timeout: 120
+      timeout: 30
       runas: ec2-user
   ApplicationStart: 
     - location: start_service.sh
-      timeout: 120
+      timeout: 60
       runas: ec2-user
