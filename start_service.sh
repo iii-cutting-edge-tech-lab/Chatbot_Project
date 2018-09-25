@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/deploy
+cd /home/ec2-user/Chatbot_Project
 echo "Running service container "
 bash getip.sh
 bash geturl.sh
@@ -39,3 +39,4 @@ y
   fi
 done
 date >> /home/ec2-user/.update_log
+
