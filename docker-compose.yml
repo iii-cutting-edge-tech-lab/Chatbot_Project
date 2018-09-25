@@ -40,11 +40,13 @@ services:
   jupyter-tutorial:
     image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
     container_name: chatbot_jupyter
+    restart: always
     env_file:
       - ./ip.env
     depends_on: 
       - api
       - redis
+      - ngrok-external-dns
     ports:
       - "8888:8888"
       - "5000:5000"
@@ -56,8 +58,6 @@ services:
   ngrok-external-dns:
     image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
     container_name: chatbot_ngrok
-    depends_on: 
-      - jupyter-tutorial
     ports:
       - "4040:4040"
     command: ngrok http chatbot_jupyter:5000
