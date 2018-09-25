@@ -50,8 +50,8 @@ services:
       - "5000:5000"
     volumes:
      - ./Chatbot_Line/code:/home/jovyan/work
-    command: start-notebook.sh --NotebookApp.token=''
-    #  - python /home/jovyan/work/test.py
+#    command: start-notebook.sh --NotebookApp.token=''
+    command: python /home/jovyan/work/test.py
 
   ngrok-external-dns:
     image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
