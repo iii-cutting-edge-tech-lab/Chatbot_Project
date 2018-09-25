@@ -60,7 +60,7 @@ services:
       - jupyter-tutorial
     ports:
       - "4040:4040"
-    command: ngrok http chatbot_ubuntu:5000
+    command: ngrok http chatbot_jupyter:5000
 
 #  jupyter-tutorial:
 #    image: 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
