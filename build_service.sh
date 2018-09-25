@@ -6,8 +6,8 @@ docker pull 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/mysql:latest
 docker pull 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/redis:latest
 docker pull 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
 docker pull 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
-echo "download S3 cc102-csv data "
 cd /home/ec2-user/Chatbot_Project
+echo "download S3 cc102-csv data "
 git submodule init
 git submodule update
 cd Chatbot_Dev/mysql_init/

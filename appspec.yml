@@ -1,7 +1,7 @@
 version: 0.0 #版本
 os: linux #使用的OS
 files: #要複製到deployment group instance裡的檔案
-  - source: / #"/":全部檔案
+  - source: / #"/":指全部檔案
     destination: /home/ec2-user/deploy #目的地檔案路徑
 permissions:
   - object: /home/ec2-user/deploy

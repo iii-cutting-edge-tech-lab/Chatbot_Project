@@ -35,7 +35,7 @@ y
     docker tag 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:older 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/jupyter:latest
     docker tag 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:older 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/ngrok:latest
     docker-compose -f docker-compose-older.yml up -d
-    echo "service deploy fail QQ" >> /home/ec2-user/.update_log
+    echo "service deploy fail QQ ~" >> /home/ec2-user/.update_log
   fi
 done
 date >> /home/ec2-user/.update_log

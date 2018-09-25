@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "chown ~/Chatbot_Project"
 sudo chown ec2-user.ec2-user /home/ec2-user/Chatbot_Project -Rf
 cd /home/ec2-user/Chatbot_Project
 git pull
