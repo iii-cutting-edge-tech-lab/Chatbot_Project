@@ -7,7 +7,7 @@ git submodule init
 git submodule update
 echo "remove service container "
 docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
+docker rm -f $(docker ps -a -q)
 echo "re-tag image "
 docker tag 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/api:latest 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/api:older
 docker tag 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/mysql:latest 204065533127.dkr.ecr.ap-northeast-1.amazonaws.com/mysql:older
