@@ -54,7 +54,8 @@ services:
     ports:
       - "8888:8888"
       - "5000:5000"
-    command: start-notebook.sh --NotebookApp.token=''
+#    command: start-notebook.sh --NotebookApp.token=''
+    command: python /home/jovyan/work/test.py
     volumes:
      - ./Chatbot_Line/code:/home/jovyan/work
 
