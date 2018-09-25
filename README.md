@@ -21,3 +21,5 @@ apiserver對外端口為5001
     LINE_API 抓取ip.env文件導入環境變數
     開啟command	改為直接執行python檔test.py
 
+* 9/25
+新增codedeploy所需腳本和文件
